@@ -209,6 +209,104 @@ VALUES
 
 
 /* ====================
+SERVICES
+======================= */
+.barber-bg {
+	background: url('../img/barber-bg.png');
+}
+.salon-bg {
+	background: url('../img/salon-bg.png');	
+	background-position: 78% 1% !important;
+}
+.services-bg {
+	background-size: cover;
+	background-position: center center;
+}
+.copy.services {
+	padding: 0 25px 30px;
+}
+.fullpage-breadcrumb {
+	font-size: 10px;
+	font-family: 'Abhaya Libre', sans-serif;
+}
+.fullpage-header {
+	background: url(../img/fullpage-header.jpg);
+	height: 30vh;
+	background-size: cover;
+	background-position: center center;
+}
+.section-header.services {
+	padding: 0.2em 0;
+}
+.section-header-group.services {
+	margin: 35px 0;
+}
+.section-header-parent {
+	padding: 1.2em 0;
+}
+.section-header-sub.services {
+	color: #9E8145;
+	display: none;
+}
+.section-header-title {
+	padding: 1em 0 3.5em;
+}
+.services-header {
+	font-family: 'Playfair Display', sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	padding: 15px 25px;
+}
+.services-list {
+	list-style: none;
+	margin-left: 40px;
+}
+.services-list li {
+	list-style-image: url('../img/services-list-icon.png');
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 15px;
+	line-height: 14px;
+	vertical-align: middle;
+}
+.services-list-icon {
+	width: 2em;
+	padding-right: 1.5em;
+}
+.services-list-subtitle {
+	display: block;
+	font-size: 12px;
+	font-weight: 400;
+}
+.services-list-wrapper {
+	padding: 10px 30px;
+}
+.lookbook-bg {
+	background-position: center center;
+	height: 35vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.lookbook1 {
+	background-image: url(../img/lookbook1.png);
+}
+.lookbook2 {
+	background-image: url('../img/lookbook2.png');
+}
+.services-group {
+	width: 85%;
+	margin: 0 auto;
+}
+.services-group#salon-services {
+	margin-top: 5em;
+}
+.services-group {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* ====================
 FOOTER
 ======================= */
 .copyright {
@@ -258,6 +356,7 @@ MEDIA QUERIES
 - 550PX
 ======================= */
 @media screen and (min-width: 550px) {
+	
 	/* HERO */
 	.hero-content {
 		width: 60%;
@@ -266,6 +365,18 @@ MEDIA QUERIES
 	.value-group {
 		width: 50%;
 	}
+	/* SERVICES */
+	.section-header-group.contain-width {
+		width: 71%;
+		margin: 0 auto;
+	}
+	.services-group {
+		width: 50%;
+	}
+	/* LOOKBOOK */
+	.lookbook-bg {
+		height: 45vh;
+	}
 }
 
 
@@ -273,6 +384,7 @@ MEDIA QUERIES
 - 750PX
 ======================= */
 @media screen and (min-width: 750px) {	
+	
 	/* REUSABLE CLASSES */
 	.wrapper {
 		width: 70%;
@@ -292,7 +404,7 @@ MEDIA QUERIES
 	.right-menu li {
 		width: auto;
 		display: inline-block;
-		padding-right: 15px;
+		padding-right: 10px;
 		font-size: 14px;
 		padding-top: 0;
 	}
@@ -314,6 +426,28 @@ MEDIA QUERIES
 		float: left;
 		text-align: left;
 		padding: 20px 0;
+	}
+	
+	/* SERVICES */
+	.services-group {
+		float: left;
+	}
+	.services-group#barber-services {
+		margin-top: 5em;
+		margin-left: 30px;
+		width: 40%;
+	}
+	.services-group#salon-services {
+		margin-top: 8em;
+		margin-left: 5em;
+		width: 40%;
+	}
+	.services-header {
+		padding: 35px 25px;
+	}
+	.another-wrapper {
+		width: 75%;
+		margin: 0 auto;
 	}
 
 	/* VALUES */
@@ -355,6 +489,13 @@ MEDIA QUERIES
 	.social {
 		padding: 10px 0 0;
 	}
+	
+	/* LOOKBOOK */
+	.col-3 {
+		width: 25%;
+		float: left;
+		height: 30vh;
+	}
 }
 
 
@@ -362,6 +503,7 @@ MEDIA QUERIES
 - 900PX
 ======================= */
 @media screen and (min-width: 900px) {
+	
 	/* REUSABLE CLASSES */
 	.wrapper {
 		width: 500px;
@@ -383,5 +525,11 @@ MEDIA QUERIES
 	}
 	.value-group {
 		width: 850px;
+	}
+
+	/* SERVICES */
+	.another-wrapper {
+		width: 65%;
+		margin: 0 auto;
 	}
 }
