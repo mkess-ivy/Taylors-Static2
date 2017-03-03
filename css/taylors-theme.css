@@ -26,6 +26,7 @@ ul, li {
 }
 
 
+
 /* ====================
 REUSABLE CLASSES
 ======================= */
@@ -356,6 +357,21 @@ LOCATIONS
 }
 
 /* ====================
+LOOKBOOK
+======================= */
+.video_img,
+.gallery_img,
+.lookbook_video iframe {
+	width: 100%;
+	padding-bottom: 30px;
+}
+.luminous_lightbox {
+	width: 90%;
+	margin: 0 auto;
+	list-style: none;
+}
+
+/* ====================
 FOOTER
 ======================= */
 .copyright {
@@ -426,6 +442,14 @@ MEDIA QUERIES
 	.lookbook-bg {
 		height: 45vh;
 	}
+	.lookbook_video {
+		width: 80%;
+		margin: 0 auto;
+	}
+	/*.luminous_lightbox {
+		width: 70%;
+	}*/
+
 }
 
 
@@ -522,6 +546,32 @@ MEDIA QUERIES
 	}
 	.locations-copy {
 		padding: 30px 40px;
+	}
+	.locations_name {
+		bottom: 1.7em;
+	}
+
+	/* LOOKBOOK */
+	.col-4.lookbook {
+		width: 31%;
+		margin-right: 3%;	
+	}
+	.col-4.lookbook:last-child {
+		margin-right: 0;
+	}
+	.luminous_lightbox {
+		width: 100%;
+	}
+	.luminous_lightbox li {
+		width: 32%;
+		float: left;
+		margin-right: 1.2%;
+	}
+	.luminous_lightbox li:last-child {
+		margin-right: 0;
+	}
+	.gallery_img {
+		padding-bottom: 15px;
 	}
 
 	/* VALUES */
