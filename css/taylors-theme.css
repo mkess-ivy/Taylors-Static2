@@ -157,6 +157,7 @@ VALUES
   z-index: 200;
   border-radius: 34px;
   margin-right: 0.3em;
+ /* display: none;*/
  }
  .backtop-icon a {
  	color: #000;
@@ -307,6 +308,54 @@ SERVICES
 }
 
 /* ====================
+LOCATIONS
+======================= */
+.value-title.locations {
+	padding-bottom: 0px;
+}
+.section-header.locations {
+	padding: 0 0;
+}
+.locations-copy {
+	padding: 30px 15px;
+}
+.locations-img {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+}
+.locations-img img {
+	width: 100%;
+	margin-bottom: 30px;
+}
+.locations_title {
+	text-transform: uppercase;
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 1.1em;
+	padding-bottom: 15px;
+}
+.locations_listing {
+	letter-spacing: 1px;
+	font-weight: 400;
+	padding-bottom: 30px;
+	list-style: none;
+}
+.locations_link a {
+	color: #9E8145;
+	font-weight: bolder;
+	text-decoration: none;
+}
+.locations_name {
+	position: absolute;
+	bottom: 2.5em;
+	text-transform: uppercase;
+	left: 10px;
+}
+.col-4.locations {
+	text-align: center;
+}
+
+/* ====================
 FOOTER
 ======================= */
 .copyright {
@@ -434,13 +483,12 @@ MEDIA QUERIES
 	}
 	.services-group#barber-services {
 		margin-top: 5em;
-		margin-left: 30px;
-		width: 40%;
+		width: 47%;
 	}
 	.services-group#salon-services {
-		margin-top: 8em;
-		margin-left: 5em;
-		width: 40%;
+		margin-top: 10em;
+		margin-left: 15px;
+		width: 47%;
 	}
 	.services-header {
 		padding: 35px 25px;
@@ -448,6 +496,32 @@ MEDIA QUERIES
 	.another-wrapper {
 		width: 75%;
 		margin: 0 auto;
+	}
+
+	/* LOCATIONS */
+
+	.location-content_wrapper {
+		width: 29%;
+		float: left;
+		margin-right: 4%;
+	}
+	.location-content_img-wrapper {
+		width: 65%;
+		float: left;
+	}
+	.locations-img {
+		width: 31%;
+		float: left;
+		margin-right: 5px;
+	}
+	.locations-img:nth-child(2) {
+		margin-top: 2em;
+	}
+	.locations-img:nth-child(3) {
+		margin-top: 4em;
+	}
+	.locations-copy {
+		padding: 30px 40px;
 	}
 
 	/* VALUES */
@@ -459,7 +533,7 @@ MEDIA QUERIES
 		width: 100%;
 	}
 	.value-text {
-		padding: 0 20px 50px;
+		padding: 0 20px 100px;
 	}
 
 	/* FOOTER */
@@ -529,7 +603,23 @@ MEDIA QUERIES
 
 	/* SERVICES */
 	.another-wrapper {
-		width: 65%;
+		width: 55%;
+		margin: 0 auto;
+	}
+
+	/* LOCATIONS */
+	.row {
+		width: 850px;
+		margin: 0 auto;
+	}
+}
+
+/* ====================
+- 1350PX
+======================= */
+@media screen and (min-width: 1350px) {
+	.location-width {
+		max-width: 1350px;
 		margin: 0 auto;
 	}
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Taylor's Barbershop</title>
+    <title>Taylor's Barbershop - Locations</title>
     <meta name="author" content="Montier Kess" />
     <meta name="portfolio" content="http://theivyproject.com" />
     <meta name="description" content="This is a site in development">
@@ -18,12 +18,13 @@
     <link rel="stylesheet" href="css/taylors-theme.css" />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,700|Playfair+Display:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre|Playfair+Display:900" rel="stylesheet">
 
     <!-- Scripts -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="js/main.js"></script>
   </head>
+  
+
   <body>
     
     <!-- Mobile and Desktop Menu -->
@@ -37,9 +38,9 @@
       </div>
       <nav class="site-nav">
         <ul class="left-menu">
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="careers.html">Careers</a></li>
+          <li><a href="#">Careers</a></li>
           <li><a href="locations.html">Locations</a></li>
           <li><a href="#">Lookbook</a></li>
         </ul>
@@ -50,71 +51,100 @@
       </nav>
     </header>
 
-    <div class="backtop-icon">
+    <div class="backtop-icon" id="js-backtop">
       <a href="#home"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
     </div>
 
-    <!-- Hero -->
-    <section class="hero-bg flex clearfix">
-      <div class="hero-content">
-        <div class="hero-logo">
-            <img src="img/taylors-logo-hero.png" />
+    <section class="fullpage-header services-header">
+      <div class="fullpage-title">locations</div>
+      <div class="fullpage-breadcrumb">home / locations</div>
+    </section>
+
+    <section class="section-header-group location-width clearfix" id="location-pictures">
+      <div class="spacer"></div>
+      <div class="location-content_wrapper">
+        <div class="value-title locations">peek inside our</div>
+        <div class="section-header locations">barbershop</div>
+        <div class="locations-copy">Taylor’s Barbershops are unique, sleek, upbeat and innovative to give you a feel of comfort, fun and relaxation.</div>
+      </div>
+      <div class="location-content_img-wrapper">
+        <div class="locations-img clearfix">
+          <img src="img/shop1.png" />
+          <div class="locations_name">mechanicsville</div>
         </div>
-        <div class="hero-logo-title">Taylor's Barbershop</div>
-        <div class="copy">Welcome to Taylor’s Barbershop, where we  provide a complete hair lounge experience for men, women and&nbsp;kids.</div>
+        <div class="locations-img clearfix">
+          <img src="img/shop2.png" />
+          <div class="locations_name">broad street</div>
+        </div>
+        <div class="locations-img clearfix">
+          <img src="img/shop3.png" />
+          <div class="locations_name">belvidere</div>
+        </div>
       </div>
     </section>
 
-    <section class="wrapper clearfix">
+    <section id="locations" class="location-width">
       <div class="section-header-group">
-        <div class="section-header"><span class="block">A full service hair lounge for</span> men, women &amp; kids</div>
-        <div class="icon"><img src="img/scissors-icon.png" /></div>
+        <div class="section-header">locations</div>
+        <img src="img/barber-icon.png" class="value-icon" />
       </div>
-      <div class="copy copy-b">Taylor’s Barbershops are unique, sleek, upbeat and innovative to give you a feel of comfort, fun and relaxation. While delivering one of the best haircuts, hair styles too, Taylor’s mission and supreme goal is to provide a private and personal feel, while creating loyalty amongst our&nbsp;clients.</div>
-      
-      <div class="section-header-group">
-        <div class="section-header-sub">because</div>
-        <div class="section-header"><span class="block">There's no need to</span> go anywhere else</div>
+      <div class="row clearfix">
+        <div class="col-4 locations">
+          <div class="locations_title">belvidere</div>
+          <ul class="locations_listing">
+            <li>120 South Belvidere</li>
+            <li>Richmond, VA 23230</li>
+            <li>T: (804)308-2179</li>
+            <li>mon - sat 8am - 8pm</li>
+            <li class="locations_link"><a href="#">view map</a></li>
+          </ul>
+        </div>
+        <div class="col-4 locations">
+          <div class="locations_title">headquarters</div>
+          <ul class="locations_listing">
+            <li>11 East Broad Street</li>
+            <li>Richmond, VA 23219</li>
+            <li>T: (804)643-1606</li>
+            <li>F: (804)643-1607</li>
+            <li>mon - fri 9am - 5pm</li>
+            <li class="locations_link"><a href="#">view map</a></li>
+          </ul>
+        </div>
+        <div class="col-4 locations">
+          <div class="locations_title">broad st</div>
+          <ul class="locations_listing">
+            <li>11 East Broad Street</li>
+            <li>Richmond, VA 23230</li>
+            <li>T: (804)643-1600</li>
+            <li>mon - sat 8am - 8pm</li>
+            <li class="locations_link"><a href="#">view map</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="group">
-        <div class="value-title">Old school, new school, it's just hair</div>
-        <div class="value-text">Taylor’s Barber & Beauty Hair Lounges are unique, sleek, upbeat and innovative to give you a feel of comfort, fun and relaxation.</div>
-        <div class="value-title">Working better together</div>
-        <div class="value-text">Taylor’s Barber & Beauty Hair Lounges are unique, sleek, upbeat and innovative to give you a feel of comfort, fun and relaxation. </div>
-        <div class="value-title">Your Friendly Neighborhood Solution</div>
-        <div class="value-text">Taylor’s Barber & Beauty Hair Lounges are unique, sleek, upbeat and innovative to give you a feel of comfort, fun and relaxation. </div>
+      <div class="spacer"></div>
+      <div class="row clearfix">
+        <div class="col-4 locations">
+          &nbsp;
+        </div>
+        <div class="col-4 locations">
+          <div class="locations_title">mechanicsville</div>
+          <ul class="locations_listing">
+            <li>3129 Mechanicsville Turnpike</li>
+            <li>Richmond, VA 23223</li>
+            <li>T: (804)658-4270</li>
+            <li>mon - sat 8am - 8pm</li>
+            <li class="locations_link"><a href="#">view map</a></li>
+          </ul>
+        </div>
+        <div class="col-4 locations">
+          &nbsp;
+        </div>
       </div>
-    
     </section>
-      
-    <section class="clearfix value-bg">
-      <div class="section-header-group">
-        <div class="section-header-sub">
-          checkout
-        </div>
-        <div class="section-header">
-          <span class="block">our essential</span> goods &amp; services
-        </div>
-      </div>
-      <div class="value-group">
-        <div class="col-4">
-          <img src="img/clippers-icon.png" class="value-icon"/>
-          <div class="value-title">view services</div>
-          <div class="value-text">Your next decision is your best decision when it comes to the hair lounge at Taylor's Barbershop</div>    
-        </div>
-        <div class="col-4">
-          <img src="img/barber-icon.png" class="value-icon"/>
-          <div class="value-title">check locations</div>
-          <div class="value-text">Your next decision is your best decision when it comes to the hair lounge at Taylor's Barbershop</div> 
-        </div>
-        <div class="col-4">
-          <img src="img/comb-icon.png" class="value-icon"/>
-          <div class="value-title">view lookbook</div>
-          <div class="value-text">Your next decision is your best decision when it comes to the hair lounge at Taylor's Barbershop</div> 
-        </div>
-      </div>
-    </section>
-      
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
     <!-- Footer -->
     <footer class="site-footer clearfix">
       <div class="footer-section-left">

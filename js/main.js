@@ -5,6 +5,39 @@ $(document).ready(function(){
 		$('.site-nav').slideToggle();
 	});
 
-	
+	// Smooth Scroll
+	$('a[href^="#"]').on('click',function (e) {
+		e.preventDefault();
 
+		var target = this.hash;
+		var $target = $(target);
+
+		$('html, body').stop().animate({
+		  'scrollTop': $target.offset().top
+		}, 900, 'swing', function () {
+		  window.location.hash = target;
+		});
+  });
+
+	// Show Backtop icon after 800px scroll
+	// $(window).scroll(function() {
+	// 	if ($(window).scrollTop() > 800) {
+	// 		$('#js-backtop').show();
+	// 	}
+	// 	else {
+	// 		$('#js-backtop').hide();
+	// 	}
+	// });
+
+	$('#js-backtop').hide();
+	$(window).scroll(function() {
+		if ($(window).scrollTop() > 100) {
+			$('#js-backtop').fadeIn("slow");
+		}
+		else {
+			$('#js-backtop').fadeOut("fast");
+		}
+	});
+
+	
 });
