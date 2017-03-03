@@ -19,16 +19,7 @@ $(document).ready(function(){
 		});
   });
 
-	// Show Backtop icon after 800px scroll
-	// $(window).scroll(function() {
-	// 	if ($(window).scrollTop() > 800) {
-	// 		$('#js-backtop').show();
-	// 	}
-	// 	else {
-	// 		$('#js-backtop').hide();
-	// 	}
-	// });
-
+	// Show Backtop icon after 100px scroll
 	$('#js-backtop').hide();
 	$(window).scroll(function() {
 		if ($(window).scrollTop() > 100) {
