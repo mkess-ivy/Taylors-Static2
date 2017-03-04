@@ -56,13 +56,22 @@ HEADER
 .desktop-logo {
 	display: none;
 }
+.mobile-logo {
+	width: 2.5em;
+}
+.menu-text {
+	font-size: 12px;
+}
 .left-menu {
-	width: 100;
+	width: 100%;
 }
 .left-menu li {
 	list-style: none;
 	width: 100%;
 	padding-top: 10px;
+	/* Overlay Menu */
+	/*font-size: 1.1em;
+	padding-bottom: 1em;*/
 }
 .left-menu li a {
 	text-decoration: none;
@@ -77,7 +86,7 @@ HEADER
 	color: #9E8145;
 }
 .logo {
-	padding: 10px 0;
+	padding: 5px 0;
 	text-align: center;
 }
 .logo a {
@@ -105,6 +114,13 @@ HEADER
 .site-nav {
 	text-align: center;
 	display: none;
+	/* Overlay Style */
+	/*position: absolute;
+	background: black;
+	width: 100%;
+	height: calc(100vh - 104px);
+	overflow: hidden;
+	padding-top: 3em;*/
 }
 
 
@@ -116,6 +132,8 @@ HERO
 	background-size: cover;
 	background-position: center center;
 	height: calc(100vh - 82px);
+	transition: 1s;
+	/*background-attachment: fixed;*/
 }
 .hero-content {
 	text-align: center;
@@ -188,6 +206,7 @@ VALUES
 	background-size: cover;
 	background-position: center center;
 	padding: 50px 0 0;
+	/*background-attachment: fixed;*/
 }
 .value-group {
 	text-align: center;
@@ -236,6 +255,8 @@ SERVICES
 	height: 30vh;
 	background-size: cover;
 	background-position: center center;
+	/*background-attachment: fixed;*/
+	filter: contrast(110%);
 }
 .section-header.services {
 	padding: 0.2em 0;
@@ -522,8 +543,8 @@ MEDIA QUERIES
 		margin: 0 auto;
 	}
 
-	/* LOCATIONS */
 
+	/* LOCATIONS */
 	.location-content_wrapper {
 		width: 29%;
 		float: left;
@@ -583,7 +604,7 @@ MEDIA QUERIES
 		width: 100%;
 	}
 	.value-text {
-		padding: 0 20px 100px;
+		padding: 0 60px 100px;
 	}
 
 	/* FOOTER */
