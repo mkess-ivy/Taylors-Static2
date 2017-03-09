@@ -48,6 +48,11 @@ REUSABLE CLASSES
 	width: 80%;
 	margin: 0 auto;
 }
+.coming-soon {
+	padding: 6em 0;
+	text-align: center;
+	text-transform: uppercase;
+}
 
 
 /* ====================
@@ -157,7 +162,7 @@ HERO
 	font-size: 22px;
 	font-family: 'Playfair Display', sans-serif;
 	text-transform: uppercase;
-	padding: 0.7em 0;
+	padding: 0.7em 1em;
 }
 
 
@@ -329,6 +334,7 @@ SERVICES
 	margin: 0 auto;
 }
 
+
 /* ====================
 LOCATIONS
 ======================= */
@@ -336,7 +342,7 @@ LOCATIONS
 	padding-bottom: 0px;
 }
 .section-header.locations {
-	padding: 0 0;
+	padding: 0 20px;
 }
 .locations-copy {
 	padding: 30px 15px;
@@ -377,6 +383,7 @@ LOCATIONS
 	text-align: center;
 }
 
+
 /* ====================
 LOOKBOOK
 ======================= */
@@ -390,6 +397,30 @@ LOOKBOOK
 	width: 90%;
 	margin: 0 auto;
 	list-style: none;
+}
+
+
+/* ====================
+FAQs
+======================= */
+.faqs-list {
+	list-style: none;
+	width: 80%;
+	margin: 3em auto;
+}
+.faqs-list li {
+	padding-bottom: 3em;
+	font-size: 14px;
+}
+.faqs-list li span {
+	font-size: 16px;
+	font-weight: bolder;
+	display: block;
+	letter-spacing: 1px;
+	padding-bottom: 15px;
+}
+.icon {
+	text-align: center;
 }
 
 /* ====================
@@ -467,9 +498,14 @@ MEDIA QUERIES
 		width: 80%;
 		margin: 0 auto;
 	}
-	/*.luminous_lightbox {
-		width: 70%;
-	}*/
+	/* FAQs */
+	.faqs-list li {
+		float: left;
+		width: 45%;
+		margin-right: 20px;
+		padding: 5px;
+		margin-bottom: 20px;
+	}
 
 }
 
@@ -607,6 +643,8 @@ MEDIA QUERIES
 		padding: 0 60px 100px;
 	}
 
+
+
 	/* FOOTER */
 	.copyright {
 		clear: both;
@@ -640,6 +678,11 @@ MEDIA QUERIES
 		width: 25%;
 		float: left;
 		height: 30vh;
+	}
+
+	/* FAQs */
+	.faqs-list {
+		width: 700px;
 	}
 }
 

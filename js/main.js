@@ -30,5 +30,9 @@ $(document).ready(function(){
 		}
 	});
 
+	// Scroll Reveal Class
+	window.sr = ScrollReveal();
+	sr.reveal('.foo', { duration: 1500 });
+
 	
 });
