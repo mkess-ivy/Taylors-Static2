@@ -115,7 +115,8 @@ HEADER
 }
 .site-header {
 	/*background-color: #fff;*/
-	position: relative;
+    padding: 10px 0;
+    position: relative;
 }
 .site-nav {
 	text-align: center;

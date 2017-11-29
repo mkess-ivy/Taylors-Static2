@@ -12,16 +12,21 @@
 }
 .location-header {
     font-weight: bold;
-    text-align: right;
+    /*text-align: right;*/
+    text-align: center;
 }
 .location-address {
     font-size: 14px;
+    text-align: center;
 }
 .social-icon {
     padding-left: 10px;
 }
 .footer-logo-section {
     display: none;
+}
+.footer-location {
+    width: 100%;
 }
 
 
@@ -55,7 +60,9 @@
 	padding: 10px 0;
 }
 .social {
-	padding: 20px 0;
+	/*padding: 20px 0;*/
+    padding: 10px 0 0;
+    text-align: center;
 }
 .social li {
 	display: inline-block;
@@ -101,5 +108,8 @@
 	}
     .footer-logo-section {
         display: block;
+    }
+    .location-header {
+        text-align: right;
     }
 }
