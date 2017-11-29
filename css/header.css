@@ -18,6 +18,11 @@ HEADER
     padding-right: 8px;
     text-transform: uppercase;
 }
+.site-menu ul li a {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
 .site-logo {
     display: inline-block;
 }
@@ -37,6 +42,10 @@ HEADER
     color: #fff;
     margin-left: 6px;
     padding: 8px 12px;
+    text-decoration: none;
+}
+.call_btn:hover {
+    cursor: pointer;
 }
 .call_icon {
     padding-right: 8px;
