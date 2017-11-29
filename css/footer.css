@@ -20,6 +20,9 @@
 .social-icon {
     padding-left: 10px;
 }
+.footer-logo-section {
+    display: none;
+}
 
 
 .copyright {
@@ -96,4 +99,7 @@
 		padding: 10px 0 0;
         text-align: right;
 	}
+    .footer-logo-section {
+        display: block;
+    }
 }

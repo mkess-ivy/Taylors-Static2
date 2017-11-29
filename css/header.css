@@ -7,7 +7,8 @@ HEADER
 }
 .site-menu {
     color: #000;
-    display: inline-block;
+    /*display: inline-block;*/
+    display: none;
 }
 .site-menu ul {
     padding-left: 20px;
@@ -27,7 +28,8 @@ HEADER
     display: inline-block;
 }
 .call_section {
-    display: inline-block;
+    /*display: inline-block;*/
+    display: none;
     width: 28%;
 }
 .call_now {
@@ -126,7 +128,14 @@ HEADER
 	overflow: hidden;
 	padding-top: 3em;*/
 }
-
+@media screen and (min-width: 750px) {
+    .call_section {
+        display: inline-block;
+    }
+    .site-menu {
+        display: inline-block;
+    }
+}
 @media screen and (min-width: 900px) {
     .desktop-logo {
 		display: inline-block;
