@@ -58,11 +58,18 @@ REUSABLE CLASSES
 /* ====================
 HERO
 ======================= */
+.hero-bg-fixed {
+	position: fixed;
+	top:80px;
+	right:0;
+	left:0;
+	margin:auto;
+	height:calc(100vh - 175px);
+}
 .hero-bg {
-	background-image: url('../img/hero.png');
 	background-size: cover;
 	background-position: center center;
-	height: calc(100vh - 175px);
+	height: calc(100vh - 175px) !important;
 	transition: 1s;
 	/*background-attachment: fixed;*/
 }

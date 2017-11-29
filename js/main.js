@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	
+
+
 	// Mobile Menu
 	$('.logo').on('click', function() {
 		$('.site-nav').slideToggle();
@@ -30,9 +31,19 @@ $(document).ready(function(){
 		}
 	});
 
-	// Scroll Reveal Class
-	window.sr = ScrollReveal();
-	sr.reveal('.foo', { duration: 1500 });
+	// Slider
+	$('.hero-bg-slider').slick({
+		infinite: true,
+		autoplay: true,
+		dots: false,
+		arrows: false,
+		autoplaySpeed: 4000,
+		fade: true,
+		cssEase: 'linear'
+	});
 
-	
+	// Scroll Reveal Class
+	// window.sr = ScrollReveal();
+	// sr.reveal('.foo', { duration: 1500 });
+
 });

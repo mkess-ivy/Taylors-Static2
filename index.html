@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -19,6 +18,7 @@
     <link rel="stylesheet" href="css/taylors-theme.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,700|Playfair+Display:900" rel="stylesheet">
@@ -29,31 +29,6 @@
 </head>
 
 <body>
-    <!-- <header class="site-header clearfix" id="home">
-        <div class="logo">
-            <a href="#"><span class="block"><img src="img/taylors-logo.png" class="mobile-logo" /></span><span class="block menu-text">menu</span></a>
-        </div>
-
-        <div class="frow justify-between">
-            <div class="logo_menu_section">
-                <div class="desktop-logo">
-                  <a href="index.html"><img src="img/taylors-logo.png" /></a>
-                </div>
-                <nav class="site-nav">
-                  <ul class="left-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="locations.html">Locations</a></li>
-                    <li><a href="lookbook.html">Lookbook</a></li>
-                  </ul>
-                </nav>
-            </div>
-            <div class="call_now">
-                Call Today!
-            </div>
-        </div>
-    </header> -->
 
     <header class="site-header site-wrapper">
         <div class="frow justify-between">
@@ -77,7 +52,7 @@
                     <div class="call_now">
                         Call Today!
                         <a class="call_btn">
-                            <span class="call_icon"><img src="img/icon_phone.png" width="11" /></span>444-444-4444
+                            <span class="call_icon"><img src="img/icon_phone.png" width="11" /></span>804-643-1600
                         </a>
                     </div>
                 </div>
@@ -90,38 +65,22 @@
     </div>
 
     <!-- Hero -->
-    <section class="hero-bg flex clearfix">
-        <div class="hero-content">
-            <div class="hero-logo">
-                <img src="img/taylors-logo-hero.png" />
+    <section class="hero-bg-slider">
+        <div class="hero-bg" style="background-image:url('img/taylors-home-1.jpg');"></div>
+        <div class="hero-bg" style="background-image:url('img/taylors-home-2.jpeg');"></div>
+    </section>
+    <section class="hero-bg-fixed clearfix">
+        <div class="frow centered">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="img/taylors-logo-hero.png" />
+                </div>
+                <div class="hero-logo-title">Taylor's Barbershop</div>
+                <div class="copy">Welcome to Taylor’s Barbershop, a hair lounge experience for men, women and&nbsp;kids.</div>
             </div>
-            <div class="hero-logo-title">Taylor's Barbershop</div>
-            <div class="copy">Welcome to Taylor’s Barbershop, a hair lounge experience for men, women and&nbsp;kids.</div>
         </div>
     </section>
 
-    <!-- Footer
-    <footer class="site-footer clearfix">
-        <div class="footer-section-left">
-            <div class="footer-logo"><img src="img/taylors-logo.png" /></div>
-            <ul class="social">
-                <li><a href="#" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-section-right">
-            <ul class="footer-menu">
-                <li><a href="lookbook.html">lookbook</a></li>
-                <li><a href="faqs.html">faqs</a></li>
-            </ul>
-            <ul class="footer-menu">
-                <li><a href="locations.html">location</a></li>
-                <li><a href="careers.html">careers</a></li>
-            </ul>
-        </div>
-        <div class="copyright">&copy;2017. All Rights Reserved. </div>
-    </footer> -->
     <footer class="site-footer site-wrapper">
         <div class="frow justify-between">
             <div class="footer-logo-section">
@@ -146,9 +105,6 @@
                     <i class="fa fa-yelp fa-lg" aria-hidden="true"></i>
                     <i class="fa fa-facebook social-icon" aria-hidden="true"></i>
                     <i class="fa fa-instagram social-icon" aria-hidden="true"></i>
-
-                    <!-- <img src="img/facebook_icon.png" class="social-icon" />
-                    <img src="img/instagram.png" class="social-icon" /> -->
                 </div>
             </div>
         </div>
@@ -159,9 +115,9 @@
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
     <script src="https://use.fontawesome.com/d476a27cae.js"></script>
+    <script src="slick/slick.js"></script>
     <script src="js/main.js"></script>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
