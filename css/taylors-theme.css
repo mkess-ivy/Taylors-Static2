@@ -16,9 +16,9 @@ Media Queries
 PRIMARY CLASSES
 ======================= */
 body {
-	background-color: #000;
+	/*background-color: #000;*/
 	font-family: 'Abhaya Libre', sans-serif;
-	color: white;
+	/*color: white;*/
 	-webkit-font-smoothing: antialiased;
 }
 ul, li {
@@ -31,8 +31,8 @@ ul, li {
 /* ====================
 REUSABLE CLASSES
 ======================= */
-.block { 
-	display: block; 
+.block {
+	display: block;
 }
 .flex {
 	display: flex;
@@ -55,86 +55,6 @@ REUSABLE CLASSES
 	text-transform: uppercase;
 }
 
-
-/* ====================
-HEADER
-======================= */
-.desktop-logo {
-	display: none;
-}
-.mobile-logo {
-	width: 3.7em;
-}
-.menu-text {
-	font-size: 12px;
-}
-.left-menu {
-	width: 100%;
-}
-.left-menu li {
-	list-style: none;
-	width: 100%;
-	padding-top: 10px;
-	font-size: 42px;
-	letter-spacing: 2px;
-	/* Overlay Menu */
-	/*font-size: 1.1em;
-	padding-bottom: 1em;*/
-}
-.left-menu li a {
-	text-decoration: none;
-	color: #000;
-	font-family: 'Playfair Display', serif;
-	text-transform: uppercase;
-}
-.left-menu li a:hover,
-.right-menu li a:hover,
-.footer-menu li a:hover,
-.social li a:hover {
-	color: #9E8145;
-}
-.left-menu li a:hover {
-	text-decoration: line-through;
-}
-.logo {
-	padding: 5px 0 15px;
-	text-align: center;
-}
-.logo a {
-	text-decoration: none;
-	color: #000;
-	text-transform: uppercase;
-}
-.right-menu {
-	width: 100%;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	color: #000;
-}
-.right-menu a {
-	color: #000;
-	text-decoration: none;
-}
-.right-menu li {
-	padding-top: 15px;
-}
-.site-header {
-	background-color: #fff;
-	position: relative;
-}
-.site-nav {
-	text-align: center;
-	display: none;
-	/* Overlay Style */
-	/*position: absolute;
-	background: black;
-	width: 100%;
-	height: calc(100vh - 104px);
-	overflow: hidden;
-	padding-top: 3em;*/
-}
-
-
 /* ====================
 HERO
 ======================= */
@@ -142,11 +62,12 @@ HERO
 	background-image: url('../img/hero.png');
 	background-size: cover;
 	background-position: center center;
-	height: calc(100vh - 82px);
+	height: calc(100vh - 175px);
 	transition: 1s;
 	/*background-attachment: fixed;*/
 }
 .hero-content {
+	color: #fff;
 	text-align: center;
 	width: 90%;
 }
@@ -176,14 +97,14 @@ HERO
 /* ====================
 VALUES
 ======================= */
-.backtop-icon { 
+.backtop-icon {
   -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.55);
   -moz-box-shadow:    1px 1px 2px 0px rgba(50, 50, 50, 0.55);
   box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.55);
   padding: 0.3em 0.5em;
   background: white;
   position: fixed;
-  bottom: 2.5em; 
+  bottom: 2.5em;
   right: 1em;
   z-index: 200;
   border-radius: 34px;
@@ -256,7 +177,7 @@ SERVICES
 	background: url('../img/barber-bg.png');
 }
 .salon-bg {
-	background: url('../img/salon-bg.png');	
+	background: url('../img/salon-bg.png');
 	background-position: 78% 1% !important;
 }
 .services-bg {
@@ -440,56 +361,6 @@ FAQs
 }
 
 /* ====================
-FOOTER
-======================= */
-.copyright {
-	color: #000;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 60px 0 20px;
-	font-size: 13px;
-}
-.footer-menu li {
-	padding-bottom: 7px;
-	font-family: 'Playfair Display', sans-serif;
-	letter-spacing: 1px;
-	-webkit-font-smoothing: antialiased;
-}
-.footer-menu li a:hover {
-	transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-}
-.footer-section-left {
-	text-align: center;
-	padding-top: 30px;
-}
-.footer-section-right {
-	text-align: center;
-	padding-top: 30px;
-}
-.site-footer {
-	background: #fff;
-}
-.social { 
-	padding: 20px 0; 
-}
-.social li {
-	display: inline-block;
-	padding-right: 10px;
-}
-.social li:last-child {
-	padding-right: 0;
-}
-.social li a,
-.footer-menu li a {
-	color: #000;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-
-/* ====================
 MEDIA QUERIES
 ======================= */
 
@@ -498,7 +369,7 @@ MEDIA QUERIES
 - 550PX
 ======================= */
 @media screen and (min-width: 550px) {
-	
+
 	/* HERO */
 	.hero-content {
 		width: 60%;
@@ -543,51 +414,15 @@ MEDIA QUERIES
 /* ====================
 - 750PX
 ======================= */
-@media screen and (min-width: 750px) {	
-	
+@media screen and (min-width: 750px) {
+
 	/* REUSABLE CLASSES */
 	.wrapper {
 		width: 70%;
 	}
 
-	/* HEADER */
-	.desktop-logo {
-		display: block;
-		float: left;
-	}
-	.left-menu {
-		width: 65%;
-		float: left;
-		margin-left: 25px;
-	}
-	.left-menu li,
-	.right-menu li {
-		width: auto;
-		display: inline-block;
-		padding-right: 10px;
-		font-size: 14px;
-		padding-top: 0;
-	}
-	.logo {
-		display: none;
-	}
-	.right-menu {
-		float: right;
-		width: 27%;
-		padding-top: 0;
-		padding-bottom: 0;
-	}
-	.site-header {
-		padding: 10px;
-	}
-	.site-nav {
-		display: block;
-		width: calc(100% - 75px);
-		float: left;
-		text-align: left;
-		padding: 20px 0;
-	}
-	
+
+
 	/* SERVICES */
 	.services-group {
 		float: left;
@@ -641,7 +476,7 @@ MEDIA QUERIES
 	/* LOOKBOOK */
 	.col-4.lookbook {
 		width: 31%;
-		margin-right: 3%;	
+		margin-right: 3%;
 	}
 	.col-4.lookbook:last-child {
 		margin-right: 0;
@@ -679,35 +514,6 @@ MEDIA QUERIES
 	}
 
 
-
-	/* FOOTER */
-	.copyright {
-		clear: both;
-		padding: 10px 0 10px 50px;
-		text-align: left;
-		font-size: 12px;
-	}
-	.footer-menu {
-		width: 40%;
-		float: right;
-		list-style: none;
-	}
-	.footer-section-left {
-		width: 30%;
-		float: left;
-		text-align: left;
-		padding-left: 50px;
-	}
-	.footer-section-right {
-		width: 40%;
-		float: right;
-		text-align: left;
-		margin-right: 40px;
-	}
-	.social {
-		padding: 10px 0 0;
-	}
-	
 	/* LOOKBOOK */
 	.col-3 {
 		width: 25%;
@@ -726,22 +532,25 @@ MEDIA QUERIES
 - 900PX
 ======================= */
 @media screen and (min-width: 900px) {
-	
+
 	/* REUSABLE CLASSES */
 	.wrapper {
 		width: 500px;
 	}
 
 	/* HEADER */
-	.left-menu {
+	/*.left-menu {
 		margin-left: 50px;
-	}
+	}*/
+
+	/* HEADER */
+
 
 	/* HERO */
 	.hero-content {
-		width: 50%;
+		width: 40%;
 	}
-	
+
 	/* VALUES */
 	.section-header-group {
 		padding: 35px 0 60px;

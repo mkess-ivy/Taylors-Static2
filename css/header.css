@@ -1,0 +1,171 @@
+/* ====================
+HEADER
+======================= */
+.site-wrapper {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.site-menu {
+    color: #000;
+    display: inline-block;
+}
+.site-menu ul {
+    padding-left: 20px;
+}
+.site-menu ul li {
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 8px;
+    text-transform: uppercase;
+}
+.site-logo {
+    display: inline-block;
+}
+.call_section {
+    display: inline-block;
+    width: 28%;
+}
+.call_now {
+    text-align: right;
+    text-transform: uppercase;
+}
+.logo-section {
+    width: 70%;
+}
+.call_btn {
+    background: #000;
+    color: #fff;
+    margin-left: 6px;
+    padding: 8px 12px;
+}
+.call_icon {
+    padding-right: 8px;
+}
+
+
+.desktop-logo {
+	display: none;
+}
+.mobile-logo {
+	width: 3.7em;
+}
+.menu-text {
+	font-size: 12px;
+}
+.left-menu {
+	width: 100%;
+}
+.left-menu li {
+	list-style: none;
+	width: 100%;
+	padding-top: 10px;
+	font-size: 42px;
+	letter-spacing: 2px;
+	/* Overlay Menu */
+	/*font-size: 1.1em;
+	padding-bottom: 1em;*/
+}
+.left-menu li a {
+	text-decoration: none;
+	color: #000;
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+}
+.left-menu li a:hover,
+.right-menu li a:hover,
+.footer-menu li a:hover,
+.social li a:hover {
+	color: #9E8145;
+}
+.left-menu li a:hover {
+	text-decoration: line-through;
+}
+.logo {
+	padding: 5px 0 15px;
+	text-align: center;
+}
+.logo a {
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+}
+.right-menu {
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #000;
+}
+.right-menu a {
+	color: #000;
+	text-decoration: none;
+}
+.right-menu li {
+	padding-top: 15px;
+}
+.site-header {
+	/*background-color: #fff;*/
+	position: relative;
+}
+.site-nav {
+	text-align: center;
+	display: none;
+	/* Overlay Style */
+	/*position: absolute;
+	background: black;
+	width: 100%;
+	height: calc(100vh - 104px);
+	overflow: hidden;
+	padding-top: 3em;*/
+}
+
+@media screen and (min-width: 900px) {
+    .desktop-logo {
+		display: inline-block;
+		/*float: left;*/
+	}
+	.left-menu {
+		width: 65%;
+		float: left;
+		margin-left: 50px;
+		/*margin-left: 25px;*/
+	}
+	.left-menu li,
+	.right-menu li {
+		width: auto;
+		display: inline-block;
+		padding-right: 10px;
+		font-size: 14px;
+		padding-top: 0;
+	}
+	.logo {
+		display: none;
+	}
+	.right-menu {
+		float: right;
+		width: 27%;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.site-header {
+		padding: 10px 0;
+	}
+	.site-nav {
+		display: block;
+		/*display: inline-block;*/
+		/*width: calc(100% - 75px);
+		float: left;*/
+		text-align: left;
+		/*padding: 20px 0;*/
+	}
+}
+@media screen and (min-width: 1200px) {
+    .call_section {
+        width: 20%;
+        max-width: 265px;
+    }
+    .site-wrapper {
+        /*max-width: 1400px;*/
+        margin:0 75px;
+        /*padding: 0;*/
+    }
+}
